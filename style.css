@@ -24,7 +24,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    color: inherit;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -76,6 +75,13 @@ table {
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Libertinus Mono";
+    src: url(fonts/LibertinusMono-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* *** Fonts End *** */
 
 
@@ -109,7 +115,7 @@ details > summary {
     background-color: lightgray;
 }
 
-details > p{
+details > p {
     padding: 10px 20px;
     background-color: lightgray;
 }
@@ -119,8 +125,14 @@ div {
 }
 
 a {
+    color: inherit;
     text-decoration: underline;
     text-decoration-style: dotted;
+}
+
+code {
+    font-family: "Libertinus Mono";
+    font-size: 18pt;
 }
 
 /* *** Styles End *** */
