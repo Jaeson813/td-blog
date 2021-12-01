@@ -1,3 +1,5 @@
+/* *** CSS Reset Start *** */
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -47,10 +49,11 @@ table {
 	border-spacing: 0;
 }
 
+/* *** CSS Reset End *** */
 
 
 
-
+/* *** Fonts Start *** */
 
 @font-face {
     font-family: "Libertinus Sans";
@@ -73,7 +76,14 @@ table {
     font-style: normal;
 }
 
+/* *** Fonts End *** */
+
+
+
+/* *** Styles Start *** */
+
 h1 {
+    margin-top: 0.75in;
     font-size: 20pt;
     font-weight: bold;
 }
@@ -85,7 +95,11 @@ body {
     font-size: 20pt;
     line-height: 1.4;
     word-wrap: break-word;
-    hyphens: auto
+    hyphens: auto;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em
+
 }
 
 em {
@@ -93,9 +107,22 @@ em {
 }
 
 details {
-    background-color: gray;
+    background-color: lightgray;
+}
+
+details > summary {
+    padding: 10px 20px;
+    font-feature-settings: "smcp", "c2sc", "onum";
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details > p{
+    padding: 10px 20px;
 }
 
 div {
     margin-bottom: 8pt
 }
+
+/* *** Styles End *** */
