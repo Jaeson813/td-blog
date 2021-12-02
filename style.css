@@ -56,28 +56,28 @@ table {
 
 @font-face {
     font-family: "Libertinus Sans";
-    src: url("fonts/LibertinusSans-Regular.otf");
+    src: url('fonts/LibertinusSans-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Libertinus Sans";
-    src: url(fonts/LibertinusSans-Italic.otf);
+    src: url('fonts/LibertinusSans-Italic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Libertinus Sans";
-    src: url(fonts/LibertinusSans-Bold.otf);
+    src: url('fonts/LibertinusSans-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Libertinus Mono";
-    src: url(fonts/LibertinusMono-Regular.otf);
+    src: url('fonts/LibertinusMono-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -87,41 +87,21 @@ table {
 
 /* *** Styles Start *** */
 
-body {
-    font-family: "Libertinus Sans";
-    max-width: 8in;
-    margin: auto;
-    padding: 10px;
-    font-size: 20pt;
-    line-height: 1.4;
-    word-wrap: break-word;
-    hyphens: auto;
+h1 {
+    font-size: 24pt;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 22pt;
-    font-weight: bold;
+h2 {
+    font-feature-settings: "smcp", "c2sc", "onum";
 }
 
 em {
     font-style: italic;
 }
 
-details > summary {
-    padding: 10px 20px;
-    font-feature-settings: "smcp", "c2sc", "onum";
+strong {
     font-weight: bold;
-    cursor: pointer;
-    background-color: lightgray;
-}
-
-details > p {
-    padding: 10px 20px;
-    background-color: lightgray;
-}
-
-div {
-    margin-bottom: 8pt;
 }
 
 a {
@@ -132,7 +112,52 @@ a {
 
 code {
     font-family: "Libertinus Mono";
+    font-size: 16pt;
+}
+
+body {
+    font-family: "Libertinus Sans";
+    max-width: 7in;
+    margin: auto;
+    padding: 16pt;
     font-size: 18pt;
+    line-height: 1.4;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+details > summary {
+    padding: 12pt 16pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details > * {
+    background-color: gainsboro;
+    padding: 0pt 16pt;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    padding-bottom: 10pt;
+}
+
+figcaption {
+    font-size: 16pt;
+    font-style: italic;
+}
+
+.info {
+    padding: 6pt 8pt;
+    background-color: darkgray;
+}
+
+.footer {
+    text-align: center;
 }
 
 /* *** Styles End *** */
