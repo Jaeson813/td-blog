@@ -120,7 +120,8 @@ body {
     max-width: 7in;
     margin: auto;
     padding: 16pt;
-    font-size: 18pt;
+    /* font-size: 18pt; */
+    font-size: 1.5rem;
     line-height: 1.4;
     word-wrap: break-word;
     hyphens: auto;
